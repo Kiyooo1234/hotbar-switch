@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "swifthotbar",
+	"version": "${version}",
+	"name": "Swift Hotbar",
+	"description": "Speeds up the held-item switch animation when you change hotbar slots. Visual only.",
+	"authors": ["Jan Rhey Cantillas"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.janrhey.swifthotbar.SwiftHotbarClient"],
+		"modmenu": ["dev.janrhey.swifthotbar.ModMenuIntegration"]
+	},
+	"suggests": {
+		"modmenu": "*"
+	},
+	"mixins": ["swifthotbar.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
